@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regression Analysis Result</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Regression Analysis Result</h1>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h2>Summary Statistics</h2>
+                <pre>{{ summary }}</pre>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h2>Error Plot</h2>
+                <img src="data:image/png;base64,{{ img_data | safe }}" class="img-fluid" alt="Error Plot">
+            </div>
+        </div>
+        <a href="/" class="btn btn-secondary mt-4">Go Back</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
